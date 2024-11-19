@@ -1,0 +1,144 @@
+@media (max-width: 1280px) {
+    .apresentacao-texto--conteudo h1 {
+        font-size: 42px !important;
+    }
+
+    .apresentacao-texto--conteudo p {
+        font-size: 20px;
+    }
+
+    .sobreMim p {
+        width: 90% !important;
+    }
+
+    .apresentacao-foto {
+        height: 90% !important;
+    }
+
+    #skills {
+        width: 90% !important;
+    }
+
+    .informacao h3 {
+        font-size: 16px;
+    }
+
+    .informacao p {
+        font-size: 14px;
+    }
+
+    .blocoF img {
+        height: 80px !important;
+    }
+}
+
+@media (max-width: 1140px) {
+    .bloco p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .bloco p {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 1640px) {
+    .blocosFormacao {
+        height: 250px;
+    }
+    .blocoF {
+        width: 200px;
+    }
+    #formacao {
+        height: 500px;
+    }
+    .blocosSkills {
+        gap: 50px;
+    }
+
+    #experiencia {
+        margin-top: -60px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .blocoF {
+        width: 170px;
+        height: 215px;
+    }
+    #formacao {
+        height: 440px;
+    }
+
+    #experiencia {
+        margin-top: -120px;
+    }
+
+    .contato-form {
+        height: 90% !important;
+        width: 55% !important;
+    }
+    
+    .informacaoFormacao {
+        margin-top: -60px !important;
+    }
+
+    .blocosFormacao {
+        margin-top: -35px !important;
+    }
+}
+
+@media (max-width: 1280px) {
+    .contato {
+        height: 650px !important;
+        width: 100%;
+    }
+
+    .contato-form {
+        height: 90% !important;
+        width: 65% !important;
+    }
+
+    .blocoF {
+        width: 170px;
+        height: 185px;
+    }
+
+    .blocosFormacao {
+        height: 215px;
+    }
+    
+    #formacao {
+        height: 400px;
+    }
+
+    #experiencia {
+        margin-top: -165px;
+    }
+
+}
+
+@media(max-width: 1340px) {
+    .contato {
+        height: 650px !important;
+        width: 100%;
+    }
+
+    .contato-form {
+        height: 90% !important;
+        width: 55% !important;
+    }
+
+    .inpt1-y-x {
+        width: 100%;
+        height: 55px;
+    }
+
+    .inpt-msg {
+        height: 110px !important;
+        padding-top: 15px;
+    }
+}

@@ -1,0 +1,1269 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Cores */
+    --blue2: rgb(41, 41, 105);
+    --yellow: #ffa500;
+    --blue3: #0000ad;
+    --grayLabel: #a2a2a2;
+    /* Fontes */
+    --raleway: "Raleway";
+    --Source_Code: "Source Code Pro", monospace;
+    /* Cores White */
+    --white: #fff;
+    --white1: #f5f5f5;
+    --blue1: #EAF2FD;
+    --blackFont: #464646;
+    /* Cores Dark */
+    --black: #000;
+    --black1: #0f0f0f;
+}
+/* Dark Configs */
+.body-back--dark,
+.body-back--dark footer {
+    background-color: var(--black);
+    color: var(--white1);
+}
+
+.body-back--dark .botaoModo:hover {
+    text-shadow: 1px 1px 2px var(--black),
+    0 0 1em var(--black1),
+    0 0 0.2em var(--black1);
+    box-shadow: 1px 1px 2px var(--yellow),
+    0 0 1em var(--yellow),
+    0 0 0.2em var(--yellow);
+}
+
+.body-back--dark .sobreMim {
+    color: var(--black);
+}
+
+.body-back--dark .header-nav li:hover,
+.body-back--dark li:hover {
+    text-shadow: 1px 1px 2px var(--white1),
+    0 0 1em var(--blue1),
+    0 0 0.2em var(--blue1);
+}
+
+.body-back--dark .botoesProj button:hover,
+.body-back--dark .bmsg:hover {
+    box-shadow: 0 0 10px 3px var(--blue3)
+}
+
+.body-back--dark .contato {
+    background-color: var(--black1);
+    color: var(--white1);
+}
+
+.body-back--dark a {
+    color: var(--white1);
+}
+
+.body-back--dark .bmsg:active {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* White Configs */
+.body-back--white {
+    background-color: var(--white1);
+    color: var(--blackFont);
+}
+
+.body-back--white .botaoModo:hover {
+    text-shadow: 1px 1px 2px var(--black),
+    0 0 1em var(--black1),
+    0 0 0.2em var(--black1);
+    box-shadow: 1px 1px 2px var(--blue3),
+    0 0 1em var(--blue3),
+    0 0 0.2em var(--blue3);
+}
+
+.body-back--white .bmsg:active {
+    background-color: var(--black);
+}
+
+/* Body */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--raleway);
+}
+
+
+/* Header */
+header {
+    height: 88px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-nome {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: start;
+}
+
+.header-nav {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    justify-content: end;
+    padding-right: 32px;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+
+.header-contato {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: start;
+}
+
+/*  */
+/* Main, botaoModo e repetidos*/
+/*  */
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 32px;
+        width: 100%
+    }
+
+    .botaoModo {
+        cursor: pointer;
+        position: fixed;
+        bottom: 4%;
+        right: 2%;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        background-color: var(--blue3);
+        color: var(--white1);
+        border: none;
+        border-radius: 5px;
+        transition: 1s;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 32px;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--black1);
+    }
+
+    
+li:hover {
+    text-shadow: 1px 1px 1.5px var(--black),
+    0 0 1em var(--black1),
+    0 0 0.1em var(--blue1);
+    cursor: pointer;
+}
+/*  */
+/* Main -> apresentacao */
+/*  */
+
+#apresentacao {
+    width: 80%;
+    height: 368px;
+    display: flex;
+}
+
+/* Main -> apresentacao -> apresentacao-texto */
+
+
+.apresentacao-texto {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.apresentacao-texto--conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+    gap: 21px;
+}
+
+.apresentacao-texto--conteudo h1 {
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.apresentacao-texto--conteudo p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.apresentacao-texto--conteudo ul {
+    list-style: none;
+    display: flex;
+    font-weight: 500;
+    gap: 32px;
+    align-self: center;
+}
+
+#apresentacao li:hover {
+    position: relative;
+    transform: translateY(-10px);
+    
+}
+
+#apresentacao li {
+    height: 40px;
+}
+
+/* Main -> apresentacao -> apresentacao-foto */
+.apresentacao-foto {
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    align-self: center;
+}
+
+.apresentacao-foto img {
+    height: 100%;
+}
+
+.assinaturaApresentacao {
+    display: none;
+}
+
+/* Main -> SobreMim */
+.sobreMim {
+    width: 100%;
+    height: 383px;
+    background-color: var(--blue1);
+    display: flex;
+    justify-content: center;
+}
+
+.sobreMim-conteudo {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sobreMim p {
+    font-size: 16px;
+    font-weight: 500;
+    width: 70%;
+}
+
+.sobreMim img {
+    height: 70px;
+    mix-blend-mode: multiply;
+}
+
+/* Main -> skills&formacao */
+.skillsFormacao {
+    height: 913px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Main -> skills&formacao -> skills */
+#skills {
+    height: 258px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.divisores-blocosSkills {
+    display: contents;
+}
+
+.blocosSkills {
+    height: 188px;
+    width: 90%;
+    gap: 100px;
+    display: flex;  
+}
+
+.bloco {
+    flex: 1;
+    background-color: var(--black1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: var(--Source_Code);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.bloco .fa-brands {
+    font-size: 50px;
+}
+
+.bloco .pSecundario {
+    display: none;
+}
+
+/* Main -> skills&formacao -> formacao */
+#formacao {
+    height: 550px;
+    width: 100%;
+    background-color: var(--black1);
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--white1);
+    gap: 0%;
+}
+
+.blocosFormacao {
+    height: 300px;
+    width: 100%;
+    gap: 60px;
+    display: flex;
+}
+
+.divisores-blocosFormacao {
+    display: contents;
+}
+
+.blocoF {
+    flex: 1;
+    background-color: var(--white1);
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgPrimaria {
+    height: 100px;
+    mix-blend-mode: multiply;
+}
+
+.imgSecundaria {
+    display: none;
+}
+
+.informacaoFormacao {
+    height: 20px;
+    width: 100%;
+    gap: 60px;
+    display: flex;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.informacao {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    flex-direction: column;
+}
+
+/* Main -> experiencia */
+
+#experiencia {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.experiencia-projeto {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.capa {
+    height: 100%;
+    width: 70%;
+    align-self: center;
+    box-shadow: 0 -8px 10px -6px var(--blue3),
+                0 8px 10px -6px var(--blue3),
+                -8px 0 10px -6px var(--blue3)
+                /* 8px 0 6px -6px var(--blue3) */
+}
+
+.capa-meio {
+    height: 100%;
+    width: 70%;
+    box-shadow: 0 -8px 10px -6px var(--blue3),
+                0 8px 10px -6px var(--blue3),
+                8px 0 6px -6px var(--blue3)
+}
+
+.descProj, .projMeio {
+    height: 300px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+.projMeioResp {
+    display: none;
+    height: 300px;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+/* Main -> experiencia -> buttons */
+
+.botoesProj {
+    display: flex;
+    gap: 20px;
+}
+
+.botoesProj button{
+    width: 100px;
+    height: 50px;
+    gap: 30px;
+    font-family: var(--raleway);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.botoesProj button:hover,
+.bmsg:hover {
+    box-shadow: 0 0 10px 2px var(--black)
+}
+
+.bRepositorio {
+    border: 2px solid var(--blue3);
+    color: var(--blue3);
+    background: none;
+}
+
+.bVer_demo {
+    background-color: var(--blue3);
+    border: none;
+    color: var(--white);
+}
+
+/* Main -> contato */
+
+.contato {
+    height: 700px;
+    width: 100vw;
+    background-color: var(--blue1);
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contato-img {
+    width: 30%;
+    height: 83%;
+}
+
+.contato-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contato-form {
+    width: 50%;
+    height: 85%;
+}
+
+.contato-form p {
+    font-weight: 500;
+}
+
+.contato-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 30px 0;
+}
+
+form div {
+    display: flex;
+}
+
+.inpt1-y-x {
+    width: 100%;
+    height: 55px;
+}
+
+input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--grayLabel);
+    padding-left: 13px;
+    font-size: 16px;
+}
+
+.inpt:focus {
+    border-bottom: 2px solid var(--blue3);
+    padding-top: 20px;
+}
+
+.inpt:focus::placeholder {
+    color: transparent;
+}
+
+label {
+    display: none;
+} 
+
+.inpt:focus ~ label{
+    display: block;
+    position: absolute;
+    padding-left: 13px;
+    padding-top: 10px;
+    font-size: 12px;
+    color: var(--blue3);
+}
+
+.inpt:valid ~ label {
+    display: block;
+    position: absolute;
+    padding-left: 13px;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.inpt:valid {
+    padding-top: 20px;
+}
+
+.inpt-msg {
+    height: 140px;
+    padding-left: 13px;
+    padding-top: 15px;
+    font-size: 16px;
+    font-family: var(--raleway);
+    border: none;
+    border-bottom: 1px solid var(--grayLabel);
+    resize: none;
+    font-weight: 500;
+}
+
+.bmsg {
+    width: 165px;
+    height: 50px;
+    background-color: var(--blue3);
+    border: none;
+    font-size: 16px;
+    font-family: var(--raleway);
+    color: var(--white1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* footer */
+
+footer {
+    height: 100px;
+    width: 100vw;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer p {
+    width: 90%;
+}
+
+@media (max-width: 1640px) {
+    .blocosFormacao {
+        height: 250px;
+    }
+    .blocoF {
+        width: 200px;
+    }
+    #formacao {
+        height: 500px;
+    }
+    .blocosSkills {
+        gap: 50px;
+    }
+
+    #experiencia {
+        margin-top: -60px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .blocoF {
+        width: 170px;
+        height: 215px;
+    }
+    #formacao {
+        height: 440px;
+    }
+
+    #experiencia {
+        margin-top: -120px;
+    }
+    
+    .informacaoFormacao {
+        margin-top: -60px !important;
+    }
+
+    .blocosFormacao {
+        margin-top: -35px !important;
+    }
+}
+
+@media(max-width: 1340px) {
+    .contato {
+        height: 650px !important;
+        width: 100%;
+    }
+
+    .inpt1-y-x {
+        width: 100%;
+        height: 55px;
+    }
+
+    .inpt-msg {
+        height: 110px !important;
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .apresentacao-texto--conteudo h1 {
+        font-size: 42px !important;
+    }
+
+    .apresentacao-texto--conteudo p {
+        font-size: 20px;
+    }
+
+    .sobreMim p {
+        width: 90% !important;
+    }
+
+    .apresentacao-foto {
+        height: 90% !important;
+    }
+
+    #skills {
+        width: 90% !important;
+    }
+
+    .informacao h3 {
+        font-size: 16px;
+    }
+
+    .informacao p {
+        font-size: 14px;
+    }
+
+    .imgPrimaria {
+        height: 80px !important;
+    }
+
+    .contato {
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 1140px) {
+    .pPrimario {
+        font-size: 15px;
+    }
+
+    .apresentacao-foto {
+        height: 80% !important;
+    }
+
+    .apresentacao-texto--conteudo h1 {
+        font-size: 38px !important;
+    }
+
+    .apresentacao-texto--conteudo p {
+        font-size: 18px;
+    }
+
+    .descProj, .projMeioResp, .projMeio {
+        gap: 10px !important;
+    }
+
+    .descProj h1, .projMeioResp h1, .projMeio h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .pPrimario {
+        font-size: 14px;
+    }
+
+    header nav {
+        display: none !important;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .header-contato {
+        justify-content: end;
+    }
+
+    .header-nome {
+        width: 30%;
+        justify-content: start;
+    }
+
+    .bloco {
+        width: 170px;
+        height: 170px !important;
+    }
+
+    .blocosSkills {
+        height: 175px !important;
+        gap: 40px !important; 
+    }
+
+    .skillsFormacao {
+        gap: 50px !important;
+    }
+
+    .blocoF {
+        width: 170px !important;
+        height: 170px !important;
+    }
+
+    .blocosFormacao {
+        height: 180px !important;
+    }
+    
+    #formacao {
+        height: 385px !important;
+    }
+
+    #experiencia {
+        margin-top: -190px !important;
+    }
+
+    .contato {
+        height: 700px;
+        gap: 20px;
+    }
+
+    .experiencia-projeto {
+        gap: 15px;
+    }
+
+    .informacao h3 {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .pPrimario {
+        font-size: 12px;
+    }
+
+    .bloco {
+        width: 160px;
+        height: 160px !important;
+    }
+
+    .blocoF {
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+    .blocosFormacao {
+        height: 160px !important;
+    }
+
+    #formacao {
+        height: 350px !important;
+    }
+
+    #experiencia {
+        margin-top: -250px !important;
+        gap: 10px !important;
+    }
+
+    .apresentacao-foto {
+        height: 70% !important;
+    }
+
+    .apresentacao-texto--conteudo h1 {
+        font-size: 34px !important;
+    }
+
+    .apresentacao-texto--conteudo p {
+        font-size: 18px !important;
+    }
+
+    #apresentacao {
+        height: 310px;
+    }
+
+    header {
+        height: 70px;
+    }
+
+    #skills {
+        height: 240px !important;
+    }
+
+    .sobreMim {
+        height: 340px !important;
+    }
+
+    .sobreMim h2 {
+        font-size: 28px !important;
+    }
+
+    .imgPrimaria {
+        height: 65px !important;
+    }
+}
+
+@media (max-width: 860px) {
+    /* Começar formato de tablet */
+    .apresentacao-texto--conteudo h1 {
+        font-size: 28px !important;
+    }
+
+    .apresentacao-texto--conteudo p {
+        font-size: 16px !important;
+    }
+
+    .bloco {
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+    .pPrimario {
+        display: none;
+    }
+
+    .bloco .pSecundario {
+        display: block !important;
+        font-size: 14px !important;
+    }
+
+    #formacao {
+        height: 600px !important;
+    }
+
+    .divisores-blocosFormacao {
+        display: flex !important;
+        gap: 50px !important;
+    }
+
+    .blocosFormacao {
+        height: 430px !important;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .blocoF {
+        height: 180px !important;
+    }
+
+    .informacaoFormacao {
+        display: none !important;
+    }
+
+    .imgPrimaria {
+        display: none !important;
+    }
+
+    .imgSecundaria {
+        display: block !important;
+        height: 250px !important;
+        mix-blend-mode: multiply !important;
+    }
+
+    #experiencia {
+        margin-top: 0px !important;
+
+    }
+
+    .experiencia-projeto {
+        width: 90% !important;
+        gap: 25px !important;
+    }
+}
+
+@media (max-width: 760px) {
+    header {
+        width: 90%;
+    }
+
+    #apresentacao {
+        width: 90% !important;
+        height: 240px;
+    }
+
+    .apresentacao-texto--conteudo h1, .sobreMim h2 {
+        font-size: 24px !important;
+    }
+
+    .sobreMim-conteudo {
+        width: 90% !important;
+    }
+
+    main {
+        gap: 20px !important;
+    }
+
+    .skillsFormacao {
+        height: auto !important;
+        gap: 20px !important;
+    }
+
+    #experiencia {
+        gap: 20px !important;
+    }
+
+    .experiencia-projeto {
+        flex-direction: column !important;
+        gap: 0px !important;
+    }
+
+    .projMeio {
+        display: none !important;
+    }
+
+    .projMeioResp {
+        display: flex !important;
+    }
+
+    .descProj, .projMeioResp {
+    height: auto !important;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    margin-top: 2%;
+    width: 90% !important;
+    }
+
+    .descProj h1, .projMeioResp h1 {
+        font-size: 18px;
+    }
+
+    .capa, .capa-meio {
+        width: 100% !important;
+    }
+
+    .contato-img {
+        display: none;
+    }
+
+    .contato-form {
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 680px) {
+    header {
+        width: 95%;
+    }
+
+    #apresentacao {
+        width: 95% !important;
+    }
+
+    .apresentacao-texto--conteudo {
+        gap: 8px;
+    }
+
+    .apresentacao-texto--conteudo h1, .sobreMim h2 {
+        font-size: 22px !important;
+    }
+
+    .sobreMim-conteudo {
+        width: 95% !important;
+    }
+
+    #skills {
+        height: auto !important;
+        gap: 30px;
+    }
+
+    .blocosSkills {
+        height: 145px !important;
+        gap: 25px !important; 
+    }
+
+    .bloco {
+        height: 130px !important;
+    }
+
+    #formacao {
+        height: auto !important;
+        padding: 20px 50px 40px 50px;
+        gap: 80px !important;
+    }
+
+    .blocosFormacao {
+        height: auto !important;
+    }
+
+    .blocoF {
+        height: 150px !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .imgSecundaria {
+        height: 210px !important;
+    }
+
+    .contato {
+        height: auto !important;
+        padding: 20px 0px !important;
+    }
+
+    .contato-form {
+        width: 90% !important;
+    }
+
+    #formacao h2, #skills h2, #experiencia h2, .contato h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 600px) {
+    .apresentacao-texto--conteudo h1, .sobreMim h2 {
+        font-size: 20px !important;
+    }
+
+    .apresentacao-texto--conteudo p, .sobreMim-conteudo p {
+        font-size: 14px !important;
+    }
+
+    .sobreMim {
+        height: auto !important;
+        padding: 20px 0px;
+    }
+
+    #skills {
+        width: 100% !important;
+    }
+
+    .contato p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 545px) {
+    #apresentacao {
+        flex-direction: column-reverse;
+        height: auto;
+        gap: 8px;
+    }
+
+    .sobreMim-conteudo {
+        gap: 10px;
+    }
+
+    .apresentacao-texto {
+        width: 100%;
+    }
+
+    .apresentacao-foto {
+        height: 130px !important;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .apresentacao-texto--conteudo ul {
+        margin-top: 10px;
+    }
+
+    .sobreMim-conteudo img {
+        display: none;
+    }
+
+    .assinaturaApresentacao {
+        display: block;
+        height: 80px !important;
+        mix-blend-mode: multiply;
+    }
+
+    .imgSecundaria {
+        height: 180px !important;
+    }    
+}
+
+@media (max-width: 490px) {
+    .header-nome {
+        width: 40%;
+        justify-content: start;
+    }
+    .header-contato {
+        font-size: 14px;
+    }
+
+    .divisores-blocosSkills {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        align-items: center;
+        gap: 20px;
+        height: 220px;
+    }
+
+    .blocosSkills {
+        gap: 0px !important;
+        height: auto !important;
+    }
+
+    .divisores-blocosFormacao {
+        flex-direction: column;
+        gap: 20px !important;
+        align-items: center;
+        height: 280px;
+    }
+
+    .blocosFormacao {
+        gap: 20px;
+    }
+
+    .blocoF {
+        width: 70% !important;
+        height: 120px !important;
+    }
+
+    .imgSecundaria {
+        height: 210px !important;
+    }
+
+    h2 {
+        font-size: 22px !important;
+    }
+
+    #formacao h2 {
+        width: 120% !important;
+        text-align: center;
+    }
+
+    .apresentacao-texto--conteudo h1 {
+        font-size: 18px !important;
+    }
+
+    .bmsg {
+        width: 140px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 410px) {
+    .header-nome {
+        width: 40%;
+        justify-content: start;
+        font-size: 14px;
+    }
+    .header-contato {
+        font-size: 12px;
+    }
+
+    .apresentacao-texto--conteudo ul {
+        gap: 15px;
+    }
+
+    .textosProj h1 {
+        font-size: 16px;
+    }
+
+    .textosProj p {
+        font-size: 14px;
+    }
+
+    .botoesProj button{
+        width: 85px;
+        height: 45px;
+        font-size: 13px;
+    }
+
+    .botoesProj {
+        gap: 10px;
+    }
+
+    .blocoF {
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 365px) {
+    .blocoF {
+        width: 90% !important;
+    }
+
+    .bloco {
+        width: 130px !important;
+    }
+}
